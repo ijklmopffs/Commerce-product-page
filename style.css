@@ -73,7 +73,7 @@ svg {
   border-radius: 7px;
   padding: 0.5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  right: -30%;
+  right: -20%;
   top: 165%;
   background-color: white;
 }
@@ -113,7 +113,7 @@ svg {
   width: 100%;
   background-color: gray;
 }
-.image_product img {
+.image_change {
   width: 400px;
   height: 400px;
   border-radius: 15px;
@@ -232,7 +232,54 @@ button:hover {
 .close {
   display: none;
 }
-
+.slider {
+  width: 100%;
+  backdrop-filter: blur(20px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.slider-div {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+}
+.popup {
+  position: relative;
+  width: 70%;
+  left: 30%;
+  margin-top: 3em;
+  top: 10%;
+}
+.product_one {
+  width: 400px;
+  height: 400px;
+  border-radius: 7px;
+}
+.previous,
+.next {
+  background-color: white;
+  padding: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: -6%;
+}
+.next {
+  left: 65%;
+}
+.slider_thumbnails {
+  display: flex;
+  gap: 2.5em;
+}
+.slider_thumbnails img {
+  width: 80px;
+  height: 80px;
+  margin-top: 1.5em;
+  border-radius: 7px;
+}
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
@@ -290,7 +337,7 @@ button:hover {
   .image_thumbnail {
     display: none;
   }
-  .image_product img {
+  .image_change {
     width: 100%;
     border-radius: 0;
   }
